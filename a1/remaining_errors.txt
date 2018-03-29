@@ -1,0 +1,120 @@
+test_approx_bet_1 (__main__.TestA1) ... ok
+test_approx_bet_2 (__main__.TestA1) ... ok
+test_approx_right (__main__.TestA1) ... FAIL
+test_bfs_3 (__main__.TestA1) ... FAIL
+test_bfs_n2d_1 (__main__.TestA1) ... ok
+test_bfs_n2d_2 (__main__.TestA1) ... ok
+test_bfs_n2np_1 (__main__.TestA1) ... ok
+test_bfs_n2np_2 (__main__.TestA1) ... ok
+test_bfs_n2p_1 (__main__.TestA1) ... ok
+test_bfs_n2p_2 (__main__.TestA1) ... ok
+test_bottom_up_1 (__main__.TestA1) ... ok
+test_bottom_up_2 (__main__.TestA1) ... ok
+test_complexity_1 (__main__.TestA1) ... ok
+test_complexity_2 (__main__.TestA1) ... ok
+test_complexity_3 (__main__.TestA1) ... ok
+test_complexity_4 (__main__.TestA1) ... ok
+test_cut (__main__.TestA1) ... ok
+test_gn (__main__.TestA1) ... ok
+test_jaccard (__main__.TestA1) ... FAIL
+test_norm_cut (__main__.TestA1) ... ok
+test_path_score_1 (__main__.TestA1) ... FAIL
+test_path_score_2 (__main__.TestA1) ... FAIL
+test_time (__main__.TestA1) ... ok
+test_vol (__main__.TestA1) ... ok
+
+======================================================================
+FAIL: test_approx_right (__main__.TestA1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 197, in test_approx_right
+    self.assertEqual('no', is_approximation_always_right().lower())
+AssertionError: 'no' != 'yes'
+- no
++ yes
+
+
+======================================================================
+FAIL: test_bfs_3 (__main__.TestA1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 102, in test_bfs_3
+    [('A', 1), ('B', 1), ('C', 1), ('D', 1), ('E', 3), ('F', 3), ('G', 2)])
+AssertionError: Lists differ: [('A', 1), ('B', 1), ('C', 1), ('D', 1), ('E', 2), ('F', 1), ('G', 2)] != [('A', 1), ('B', 1), ('C', 1), ('D', 1), ('E', 3), ('F', 3), ('G', 2)]
+
+First differing element 4:
+('E', 2)
+('E', 3)
+
+- [('A', 1), ('B', 1), ('C', 1), ('D', 1), ('E', 2), ('F', 1), ('G', 2)]
+?                                                ^         ^
+
++ [('A', 1), ('B', 1), ('C', 1), ('D', 1), ('E', 3), ('F', 3), ('G', 2)]
+?                                                ^         ^
+
+
+======================================================================
+FAIL: test_jaccard (__main__.TestA1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 235, in test_jaccard
+    self.assertEqual(res, [(('D', 'E'), 0.5), (('D', 'A'), 0.0)])
+AssertionError: Lists differ: [(('D', 'A'), 0.0)] != [(('D', 'E'), 0.5), (('D', 'A'), 0.0)]
+
+First differing element 0:
+(('D', 'A'), 0.0)
+(('D', 'E'), 0.5)
+
+Second list contains 1 additional elements.
+First extra element 1:
+(('D', 'A'), 0.0)
+
+- [(('D', 'A'), 0.0)]
++ [(('D', 'E'), 0.5), (('D', 'A'), 0.0)]
+
+======================================================================
+FAIL: test_path_score_1 (__main__.TestA1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 245, in test_path_score_1
+    self.assertListEqual(res, [(('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)])
+AssertionError: Lists differ: [(('D', 'D'), 1.0), (('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)] != [(('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)]
+
+First differing element 0:
+(('D', 'D'), 1.0)
+(('D', 'F'), 0.5)
+
+First list contains 1 additional elements.
+First extra element 3:
+(('D', 'C'), 0.25)
+
+- [(('D', 'D'), 1.0), (('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)]
+?          ^    ^ ^           ^                 --------------------
+
++ [(('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)]
+?          ^    ^ ^           ^      +
+
+
+======================================================================
+FAIL: test_path_score_2 (__main__.TestA1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "a1_test.py", line 257, in test_path_score_2
+    self.assertListEqual(res, [(('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25), (('D', 'H'), 0.25)])
+AssertionError: Lists differ: [(('D', 'D'), 1.0), (('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)] != [(('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25), (('D', 'H'), 0.25)]
+
+First differing element 0:
+(('D', 'D'), 1.0)
+(('D', 'F'), 0.5)
+
+- [(('D', 'D'), 1.0), (('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25)]
+?          ^    ^ ^           ^                  ^                   ^
+
++ [(('D', 'F'), 0.5), (('D', 'A'), 0.25), (('D', 'C'), 0.25), (('D', 'H'), 0.25)]
+?          ^    ^ ^           ^      +            ^                   ^
+
+
+----------------------------------------------------------------------
+Ran 24 tests in 5.741s
+
+FAILED (failures=5)
