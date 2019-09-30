@@ -1,0 +1,20 @@
+Number of users collected: 5
+
+Number of messages collected: 100
+
+Number of communities discovered: 2
+
+Average number of users per community: 41.50
+
+Number of instances per class found:
+Good emotion: 39
+Neutral emotion: 72
+Bad emotion: 6
+
+One example from each class:
+example from Good emotion: RT @UnboxTherapy: Here’s your chance to win 1 of 3 flagship smartphones of your choice… Follow @UnboxTherapy and @GoDaddy + RT this tweet t…
+
+example from Neutral emotion: @dbrand iPhone X hands down
+
+example from Bad emotion: RT @SnazzyQ: Call me cynical, but Portrait Mode on iPhone X is not good. Oh, and it’s not in beta anymore so I don’t wanna hear that lame e…
+
