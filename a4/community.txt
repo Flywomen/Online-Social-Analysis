@@ -1,0 +1,6 @@
+graph has 2045 nodes and 2128 edges
+We filter nodes which have less than 2 degrees to get subgraph
+subgraph has 83 nodes and 167 edges
+first partition: cluster 1 has 2 nodes and cluster 2 has 81 nodes
+Number of communities discovered: 2
+Average number of users per community: 41.50

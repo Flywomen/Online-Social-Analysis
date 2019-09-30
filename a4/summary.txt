@@ -1,0 +1,20 @@
+Number of users collected: 5
+
+Number of messages collected: 100
+
+Number of communities discovered: 2
+
+Average number of users per community: 41.50
+
+Number of instances per class found:
+Good emotion: 48
+Neutral emotion: 66
+Bad emotion: 4
+
+One example from each class:
+example from Good emotion: RT @UnboxTherapy: Here’s your chance to win 1 of 3 flagship smartphones of your choice… Follow @UnboxTherapy and @GoDaddy + RT this tweet t…
+
+example from Neutral emotion: RT @dbrand: Note 8 or iPhone X? https://t.co/ULbIXJebPF
+
+example from Bad emotion: RT @Forbes: Vietnamese hackers fool Apple Face ID again -- this time with a $200 'evil twin' mask https://t.co/gx1bnoeR5y https://t.co/QV1J…
+
