@@ -1,3 +1,16 @@
+Online Social Network Analysis Exercise							   
+
+•	Constructed and analyzed a social network of 4 U.S. presidential candidates with Twitter API and NetworkX library. 
+
+•	Implemented community detection using Girvan-Newman algorithm with Facebook “like” data, and then used the result graph after clustering to recommend friends for Bill Gates by computing the top Jaccard score and path score.
+
+•	Implemented a content-based recommendation algorithm based on the tf-idf and cosine similarity with MovieLens database (ratings scale is 0.5-5.0), obtaining a mean absolute error of the prediction of 0.78.
+
+•	Analyzed different groups of people’s comments on Twitter about iPhone X by calculating the sentiment score of individual tweets with AFINN lexicon and classifying them to positive, neutral or negative.
+
+
+
+
 Each student has their own private GitHub repository at:  
 <https://github.com/iit-cs579/[your-github-id]>
 
