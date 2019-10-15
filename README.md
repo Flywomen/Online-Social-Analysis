@@ -1,4 +1,6 @@
-# Online Social Network Analysis Exercise							   
+# Online Social Network Analysis Exercise							
+
+What I did:
 
 •	Constructed and analyzed a social network of 4 U.S. presidential candidates with Twitter API and NetworkX library. 
 
